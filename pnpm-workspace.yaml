@@ -14,5 +14,17 @@ allowBuilds:
 
 blockExoticSubdeps: false
 
+minimumReleaseAge: 60
+minimumReleaseAgeExclude:
+  - vite-plus
+  - vite
+  - vitest
+  - '@voidzero-dev/*'
+  - '@oxc-project/*'
+  - '@oxlint/*'
+  - oxlint
+  - oxfmt
+  - oxlint-tsgolint
+
 patchedDependencies:
   steam-crypto@0.0.1: patches/steam-crypto@0.0.1.patch
